@@ -2,7 +2,7 @@
 services:
   frontend:
     build: ./frontend
-    image: abikthakur/frontend:v1
+    image: abik123/frontend:v1
     container_name: taskflow-frontend
     ports:
       - "8080:80"
@@ -12,7 +12,7 @@ services:
 
   backend:
     build: ./backend
-    image: abikthakur/backend:v1
+    image: abik123/backend:v1
     container_name: taskflow-backend
     environment:
       PORT: ${PORT}
